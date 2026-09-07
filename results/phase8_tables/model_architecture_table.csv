@@ -1,0 +1,17 @@
+model,layer,layer_type,output_shape_batch_128,monitored_for_entropy,trainable_parameters_in_layer,total_model_parameters
+mlp,flatten,Flatten,"(128, 784)",False,0,235146
+mlp,fc1,Linear,"(128, 256)",False,200960,235146
+mlp,relu1,ReLU,"(128, 256)",True,0,235146
+mlp,fc2,Linear,"(128, 128)",False,32896,235146
+mlp,relu2,ReLU,"(128, 128)",True,0,235146
+mlp,fc3,Linear output layer,"(128, 10)",False,1290,235146
+cnn,conv1,Conv2d,"(128, 16, 28, 28)",False,160,206922
+cnn,relu1,ReLU,"(128, 16, 28, 28)",True,0,206922
+cnn,pool1,MaxPool2d,"(128, 16, 14, 14)",False,0,206922
+cnn,conv2,Conv2d,"(128, 32, 14, 14)",False,4640,206922
+cnn,relu2,ReLU,"(128, 32, 14, 14)",True,0,206922
+cnn,pool2,MaxPool2d,"(128, 32, 7, 7)",False,0,206922
+cnn,flatten,Flatten,"(128, 1568)",False,0,206922
+cnn,fc1,Linear,"(128, 128)",False,200832,206922
+cnn,relu3,ReLU,"(128, 128)",True,0,206922
+cnn,fc2,Linear output layer,"(128, 10)",False,1290,206922

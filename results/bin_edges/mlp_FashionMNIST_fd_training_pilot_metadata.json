@@ -1,0 +1,77 @@
+{
+  "purpose": "training_based_pilot_bin_edges",
+  "model": "mlp",
+  "dataset": "FashionMNIST",
+  "pilot_epochs": 5,
+  "pilot_seed": 0,
+  "split_seed": 42,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "val_per_class": 1000,
+  "max_validation_batches_per_epoch": 79,
+  "max_values_per_layer_per_batch": 10000,
+  "binning_method": "fd",
+  "fixed_bins_if_used": 50,
+  "monitored_layers": [
+    "relu1",
+    "relu2"
+  ],
+  "pilot_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5423953994560242,
+      "train_accuracy": 0.80626,
+      "val_loss": 0.42703380007743835,
+      "val_accuracy": 0.8414
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.38432813554763795,
+      "train_accuracy": 0.85952,
+      "val_loss": 0.3920100241661072,
+      "val_accuracy": 0.8551
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.34689751695632937,
+      "train_accuracy": 0.87234,
+      "val_loss": 0.344660760307312,
+      "val_accuracy": 0.8727
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.31750656984329223,
+      "train_accuracy": 0.8826,
+      "val_loss": 0.33847383794784547,
+      "val_accuracy": 0.8759
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2975680550479889,
+      "train_accuracy": 0.89076,
+      "val_loss": 0.32275585265159606,
+      "val_accuracy": 0.8841
+    }
+  ],
+  "bin_edge_summary": [
+    {
+      "layer": "relu1",
+      "sample_count": 3920480,
+      "sample_min": 0.0,
+      "sample_max": 16.72398567199707,
+      "num_bins": 1151,
+      "bin_min": -0.16723985671997071,
+      "bin_max": 16.89122552871704
+    },
+    {
+      "layer": "relu2",
+      "sample_count": 3910240,
+      "sample_min": 0.0,
+      "sample_max": 18.068700790405273,
+      "num_bins": 715,
+      "bin_min": -0.18068700790405273,
+      "bin_max": 18.249387798309325
+    }
+  ],
+  "important_note": "This pilot run is used only to determine fixed histogram bin edges. It is not included in the final reported thesis results."
+}

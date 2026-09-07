@@ -1,0 +1,2 @@
+model,dataset,seed,split_seed,test_loss,test_accuracy,test_generalization_gap
+mlp,FashionMNIST,1,42,0.4799470755815506,0.8863,0.07896000000000003

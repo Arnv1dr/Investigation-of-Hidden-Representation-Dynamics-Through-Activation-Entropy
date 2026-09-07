@@ -1,0 +1,87 @@
+{
+  "purpose": "training_based_pilot_bin_edges",
+  "model": "cnn",
+  "dataset": "FashionMNIST",
+  "pilot_epochs": 5,
+  "pilot_seed": 0,
+  "split_seed": 42,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "val_per_class": 1000,
+  "max_validation_batches_per_epoch": 79,
+  "max_values_per_layer_per_batch": 10000,
+  "binning_method": "fixed",
+  "fixed_bins_if_used": 50,
+  "monitored_layers": [
+    "relu1",
+    "relu2",
+    "relu3"
+  ],
+  "pilot_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5595322418022156,
+      "train_accuracy": 0.8025,
+      "val_loss": 0.3887519422054291,
+      "val_accuracy": 0.8583
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.35276648866653443,
+      "train_accuracy": 0.87428,
+      "val_loss": 0.31714653463363646,
+      "val_accuracy": 0.8855
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.31032363595962525,
+      "train_accuracy": 0.88924,
+      "val_loss": 0.30136799211502074,
+      "val_accuracy": 0.8878
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.27774471704483034,
+      "train_accuracy": 0.89908,
+      "val_loss": 0.29039536151885986,
+      "val_accuracy": 0.8909
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2536854815673828,
+      "train_accuracy": 0.9067,
+      "val_loss": 0.27186338880062105,
+      "val_accuracy": 0.8996
+    }
+  ],
+  "bin_edge_summary": [
+    {
+      "layer": "relu1",
+      "sample_count": 3950000,
+      "sample_min": 0.0,
+      "sample_max": 2.4350836277008057,
+      "num_bins": 50,
+      "bin_min": -0.024350836277008056,
+      "bin_max": 2.459434463977814
+    },
+    {
+      "layer": "relu2",
+      "sample_count": 3950000,
+      "sample_min": 0.0,
+      "sample_max": 4.127908229827881,
+      "num_bins": 50,
+      "bin_min": -0.041279082298278806,
+      "bin_max": 4.16918731212616
+    },
+    {
+      "layer": "relu3",
+      "sample_count": 3910240,
+      "sample_min": 0.0,
+      "sample_max": 18.61377716064453,
+      "num_bins": 50,
+      "bin_min": -0.18613777160644532,
+      "bin_max": 18.799914932250978
+    }
+  ],
+  "important_note": "This pilot run is used only to determine fixed histogram bin edges. It is not included in the final reported thesis results."
+}

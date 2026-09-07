@@ -1,0 +1,6 @@
+model,layer,fd_entropy_change_mean,fixed50_entropy_change_mean,fd_direction,fixed50_direction,same_qualitative_direction,absolute_change_difference
+cnn,relu1,-0.6779244566786204,-0.25605531798653247,decrease,decrease,True,0.421869138692088
+cnn,relu2,-3.1031021455749523,-1.4466615992858396,decrease,decrease,True,1.6564405462891127
+cnn,relu3,-1.4153195504870506,-0.6973276434188452,decrease,decrease,True,0.7179919070682054
+mlp,relu1,-2.5236359315988928,-1.0617408587240087,decrease,decrease,True,1.461895072874884
+mlp,relu2,-1.3134510878706969,-0.5280891035156643,decrease,decrease,True,0.7853619843550326

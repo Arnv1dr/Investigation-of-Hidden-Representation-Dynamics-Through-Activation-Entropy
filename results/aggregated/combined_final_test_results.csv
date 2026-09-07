@@ -1,0 +1,11 @@
+model,dataset,seed,split_seed,test_loss,test_accuracy,test_generalization_gap,source_file
+cnn,FashionMNIST,1,42,0.4802768550992012,0.9089,0.0838599999999999,cnn_FashionMNIST_seed1_finaltest.csv
+cnn,FashionMNIST,2,42,0.509529885005951,0.9081,0.0838599999999999,cnn_FashionMNIST_seed2_finaltest.csv
+cnn,FashionMNIST,3,42,0.4668386463165283,0.9068,0.0799799999999999,cnn_FashionMNIST_seed3_finaltest.csv
+cnn,FashionMNIST,4,42,0.4969218687057495,0.9109,0.0811799999999999,cnn_FashionMNIST_seed4_finaltest.csv
+cnn,FashionMNIST,5,42,0.4757419518470764,0.9116,0.08016,cnn_FashionMNIST_seed5_finaltest.csv
+mlp,FashionMNIST,1,42,0.4799470755815506,0.8863,0.07896,mlp_FashionMNIST_seed1_finaltest.csv
+mlp,FashionMNIST,2,42,0.5056163227558136,0.8783,0.0873,mlp_FashionMNIST_seed2_finaltest.csv
+mlp,FashionMNIST,3,42,0.4916417680334299,0.8818,0.08328,mlp_FashionMNIST_seed3_finaltest.csv
+mlp,FashionMNIST,4,42,0.4914398635864258,0.8849,0.0808999999999999,mlp_FashionMNIST_seed4_finaltest.csv
+mlp,FashionMNIST,5,42,0.482119759941101,0.8814,0.08342,mlp_FashionMNIST_seed5_finaltest.csv

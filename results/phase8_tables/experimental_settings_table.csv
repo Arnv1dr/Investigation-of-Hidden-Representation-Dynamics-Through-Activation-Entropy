@@ -1,0 +1,20 @@
+setting,value
+Primary dataset,Fashion-MNIST
+Architectures,"CNN, MLP"
+Main seeds,"1, 2, 3, 4, 5"
+Number of runs per architecture,5
+Epochs per main run,30
+Batch size,128
+Optimizer,Adam
+Learning rate,0.001
+Loss function,Cross-entropy loss
+Activation function,ReLU
+Training split,"50,000 images from official training portion"
+Validation split,"10,000 images from official training portion, 1,000 per class"
+Official test set,"10,000 images, evaluated once after each completed run"
+Split seed,42
+Entropy estimator,Histogram-based Shannon entropy
+Main binning method,Freedman-Diaconis bin edges from training-based pilot
+Entropy monitoring batches,79 validation batches
+Entropy monitoring set,Full validation split
+Final output layer included in entropy analysis,No
